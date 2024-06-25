@@ -1,0 +1,19 @@
+<div class="carousel-container">
+  <button mat-icon-button (click)="prevSlide()">
+    <mat-icon>chevron_left</mat-icon>
+  </button>
+  <mat-card *ngFor="let slide of slides; let i = index" [class.active]="i === currentIndex">
+    <div class="image-container">
+      <img mat-card-image [src]="slide.image" alt="{{slide.title}}">
+      <div class="overlay">
+        <mat-card-content>
+          <h2>{{slide.title}}</h2>
+          <p>{{slide.description}}</p>
+        </mat-card-content>
+      </div>
+    </div>
+  </mat-card>
+  <button mat-icon-button (click)="nextSlide()">
+    <mat-icon>chevron_right</mat-icon>
+  </button>
+</div>

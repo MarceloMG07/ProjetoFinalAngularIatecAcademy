@@ -1,0 +1,17 @@
+.sidenav-container {
+    height: 100vh;
+}
+
+.max-spacer {
+    flex: 1 1 auto;
+}
+
+.section-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.router-content {
+    flex: 1;
+}

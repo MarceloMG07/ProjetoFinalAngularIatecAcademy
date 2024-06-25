@@ -1,0 +1,21 @@
+<mat-sidenav-container class="sidenav-container">
+    <mat-sidenav #sidenav mode="over" hasBackdrop="true">
+        <mat-toolbar>
+            <span class="toolbar-title">Menu</span>
+            <span class="max-spacer"></span>
+            <button mat-icon-button (click)="sidenav.close()">
+                <mat-icon>menu_open</mat-icon>
+            </button>
+        </mat-toolbar>
+        <app-nav-list (itemSelected)="sidenav.close()"></app-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <section class="section-content">
+            <app-tool-bar (toggleSidenav)="sidenav.toggle()"></app-tool-bar>
+            <div class="router-content">
+                <router-outlet></router-outlet>
+            </div>
+            <app-footer></app-footer>
+        </section>
+    </mat-sidenav-content>
+</mat-sidenav-container>

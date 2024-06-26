@@ -1,0 +1,14 @@
+.container{
+    padding: 1.5em;
+    width: 300px;
+}
+
+.dialog-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.dialog-actions{
+    display: flex;
+    justify-content: space-between;
+}

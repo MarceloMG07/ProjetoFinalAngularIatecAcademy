@@ -1,0 +1,17 @@
+<div class="container">
+    <div mat-dialog-content class="dialog-content">
+        <h2 mat-dialog-title>Login</h2>
+      <mat-form-field>
+        <mat-label required>Usuário</mat-label>
+        <input matInput [(ngModel)]="username">
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Senha</mat-label>
+        <input matInput [(ngModel)]="password" type="password">
+      </mat-form-field>
+    </div>
+    <div mat-dialog-actions class="dialog-actions">
+      <button mat-button (click)="onNoClick()">Cancelar</button>
+      <button mat-button (click)="onLoginClick()">Conectar</button>
+    </div>
+</div>

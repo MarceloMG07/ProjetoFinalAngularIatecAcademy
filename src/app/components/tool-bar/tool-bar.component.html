@@ -4,7 +4,11 @@
     </button>
     <span class="toolbar-title">My App</span>
     <span class="example-spacer"></span>
-    <button mat-raised-button aria-label="Conectar" routerLink="/login">
+    <!-- <button mat-raised-button aria-label="Conectar" routerLink="/login">
+        <mat-icon>login</mat-icon>
+        <span>Conectar</span>
+    </button> -->
+    <button mat-raised-button aria-label="Conectar" (click)="openLoginDialog()">
         <mat-icon>login</mat-icon>
         <span>Conectar</span>
     </button>
